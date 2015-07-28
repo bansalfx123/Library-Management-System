@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Database_first</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+ 	<servlet>
+        <servlet-name>Schema</servlet-name>
+        <servlet-class>add_user</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema</servlet-name>
+        <url-pattern>/HServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Schema1</servlet-name>
+        <servlet-class>search_book</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema1</servlet-name>
+        <url-pattern>/HServlet1</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>Schema2</servlet-name>
+        <servlet-class>check_out</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema2</servlet-name>
+        <url-pattern>/HServlet2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Schema3</servlet-name>
+        <servlet-class>check_in</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema3</servlet-name>
+        <url-pattern>/HServlet3</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Schema4</servlet-name>
+        <servlet-class>check_in_sec</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema4</servlet-name>
+        <url-pattern>/HServlet4</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>Schema5</servlet-name>
+        <servlet-class>search_fines</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema5</servlet-name>
+        <url-pattern>/HServlet5</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Schema6</servlet-name>
+        <servlet-class>search_fines_pay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema6</servlet-name>
+        <url-pattern>/HServlet6</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Schema7</servlet-name>
+        <servlet-class>search_fines_update</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schema7</servlet-name>
+        <url-pattern>/HServlet7</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
